@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Módulo 1 - Exercício 1</title>
+  </head>
+  <body>
+
+    <script>
+      function escreveEndereco(dados) {
+        return 'O usuário mora em ' + dados.cidade +
+          ' / ' + dados.uf + 
+          ', no bairro ' + dados.bairro +
+          ', na rua \"' + dados.rua +
+          '\" com n° ' + dados.numero + '.';
+      }
+      
+      var endereco = {
+        rua: "Rua dos pinheiros",
+        numero: 1293,
+        bairro: "Centro",
+        cidade: "São Paulo",
+        uf: "SP"
+      };
+
+      saida = escreveEndereco(endereco);
+      console.log(saida);
+    </script>
+  </body>
+</html>

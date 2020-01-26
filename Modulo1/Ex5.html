@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Módulo 1 - Exercício 5</title>
+  </head>
+  <body>
+
+    <script>
+      function verHabiblidades(pessoas) {
+        var saida = '';
+        for (const value of pessoas) {
+          saida += 'O ' + value.nome + ' possui as habilidades: '
+          saida += value.habilidades.join(', ');
+          saida += '\n'
+        }
+        console.log(saida);
+      }
+
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+      ];
+
+      verHabiblidades(usuarios);
+
+    </script>
+  </body>
+</html>

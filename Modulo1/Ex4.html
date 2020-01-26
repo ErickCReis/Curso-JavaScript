@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Módulo 1 - Exercício 4</title>
+  </head>
+  <body>
+
+    <script>
+      function experiencia(anos) {
+        if (anos === 0 || anos === 1) {
+          return 'Iniciante';
+        } else if (anos === 2 || anos === 3) {
+          return 'Intermediário';
+        } else if (anos === 4 || anos === 5 || anos === 6) {
+          return 'Avançado';
+        } else if (anos >= 7) {
+          return 'Jedi Master';
+        } else {
+          return 'Inválido';
+        }
+      }
+
+      var anosEstudo = 7;
+      console.log(experiencia(anosEstudo));
+    </script>
+  </body>
+</html>
